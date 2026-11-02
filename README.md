@@ -1,6 +1,6 @@
 # FruitVision AI — Intelligent Multi-Fruit Detection, Tracking & Quality Inspection System
 
-An academic major project and production-style agricultural technology platform for automated multi-fruit detection, continuous multi-object tracking, and visual defect grading on video streams.
+An academic Industrial project and production-style agricultural technology platform for automated multi-fruit detection, continuous multi-object tracking, and visual defect grading on video streams.
 
 ---
 
