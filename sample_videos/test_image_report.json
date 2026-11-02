@@ -1,0 +1,53 @@
+{
+  "project": "FruitVision AI",
+  "title": "Automated Multi-Fruit Detection, Tracking and Quality Inspection Report",
+  "job_id": "test-image-demo",
+  "filename": "test_fruit_basket.jpg",
+  "generated_at": "2026-11-02T09:43:25.214342Z",
+  "academic_project_objectives": [
+    "Objective 1: Multi-fruit object detection using deep learning YOLO model",
+    "Objective 2: Multi-object tracking (ByteTrack) and unique object counting",
+    "Objective 3: Quality inspection and defect assessment with uncertainty handling"
+  ],
+  "video_metadata": {
+    "filename": "test_fruit_basket.jpg",
+    "filesize_mb": 0.02,
+    "duration_seconds": 0.0,
+    "fps": 0.0,
+    "frame_count": 1,
+    "width": 800,
+    "height": 600,
+    "codec": "JPG"
+  },
+  "analysis_settings": {
+    "confidence_threshold": 0.25,
+    "tracking_enabled": false,
+    "quality_inspection_enabled": true,
+    "media_type": "image",
+    "detection_model": "yolov8n.pt",
+    "device": "cpu"
+  },
+  "summary_metrics": {
+    "total_frames_processed": 1,
+    "total_detections": 0,
+    "unique_fruits": 0,
+    "fruit_counts": {},
+    "fruit_percentages": {},
+    "quality_summary": {
+      "mode": "heuristic",
+      "model_identity": "FruitVision Heuristic Surface Analyzer v1.0 (Color/Defect Surface Heuristic - Not Deep Learning)",
+      "healthy_count": 0,
+      "defective_count": 0,
+      "uncertain_count": 0,
+      "defect_breakdown": {
+        "Visible Damage": 0,
+        "Rotten / Spoiled": 0
+      }
+    },
+    "avg_confidence": 0.0,
+    "processing_time_seconds": 0.175,
+    "fps_throughput": 5.7
+  },
+  "tracked_objects": [],
+  "disclaimer": "Quality classifications are external visual defect assessments only. Heuristics or models do not verify internal flesh integrity or bacterial safety."
+}

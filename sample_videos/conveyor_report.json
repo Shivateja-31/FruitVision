@@ -1,0 +1,69 @@
+{
+  "project": "FruitVision AI",
+  "title": "Automated Multi-Fruit Detection, Tracking and Quality Inspection Report",
+  "job_id": "milestone1-demo",
+  "filename": "conveyor_fruits.mp4",
+  "generated_at": "2026-11-02T08:50:20.582572Z",
+  "academic_project_objectives": [
+    "Objective 1: Multi-fruit object detection using deep learning YOLO model",
+    "Objective 2: Multi-object tracking (ByteTrack) and unique object counting",
+    "Objective 3: Quality inspection and defect assessment with uncertainty handling"
+  ],
+  "video_metadata": {
+    "filename": "conveyor_fruits.mp4",
+    "filesize_mb": 0.6,
+    "duration_seconds": 5.0,
+    "fps": 24.0,
+    "frame_count": 120,
+    "width": 800,
+    "height": 600,
+    "codec": "mp4v"
+  },
+  "analysis_settings": {
+    "confidence_threshold": 0.25,
+    "tracking_enabled": true,
+    "quality_inspection_enabled": true,
+    "frame_stride": 1,
+    "detection_model": "yolov8n.pt",
+    "device": "cpu"
+  },
+  "summary_metrics": {
+    "total_frames_processed": 120,
+    "total_detections": 46,
+    "unique_fruits": 1,
+    "fruit_counts": {
+      "orange": 1
+    },
+    "fruit_percentages": {
+      "orange": 100.0
+    },
+    "quality_summary": {
+      "mode": "heuristic",
+      "model_identity": "FruitVision Heuristic Surface Analyzer v1.0 (Color/Defect Surface Heuristic - Not Deep Learning)",
+      "healthy_count": 0,
+      "defective_count": 1,
+      "uncertain_count": 0,
+      "defect_breakdown": {
+        "Visible Damage": 1,
+        "Rotten / Spoiled": 0
+      }
+    },
+    "avg_confidence": 0.3988,
+    "processing_time_seconds": 7.7,
+    "fps_throughput": 15.58
+  },
+  "tracked_objects": [
+    {
+      "track_id": 1,
+      "class_name": "orange",
+      "detection_count": 46,
+      "avg_confidence": 0.3988,
+      "first_frame": 17,
+      "last_frame": 120,
+      "quality_label": "Visible Damage",
+      "quality_confidence": 0.85,
+      "is_uncertain": false
+    }
+  ],
+  "disclaimer": "Quality classifications are external visual defect assessments only. Heuristics or models do not verify internal flesh integrity or bacterial safety."
+}

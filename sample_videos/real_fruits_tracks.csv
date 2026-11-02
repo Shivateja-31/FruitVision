@@ -1,0 +1,7 @@
+track_id,class_name,detection_count,avg_confidence,first_frame,last_frame,quality_label,quality_confidence,is_uncertain
+1,apple,1,0.5546,1,1,Visible Damage,0.832,False
+2,apple,1,0.4038,1,1,Visible Damage,0.845,False
+3,apple,1,0.3929,1,1,Healthy,0.734,False
+4,apple,1,0.3539,1,1,Healthy,0.819,False
+5,orange,1,0.2944,1,1,Healthy,0.739,False
+6,orange,1,0.2579,1,1,Healthy,0.734,False

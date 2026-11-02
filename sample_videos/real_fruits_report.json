@@ -1,0 +1,168 @@
+{
+  "project": "FruitVision AI",
+  "title": "Automated Multi-Fruit Detection, Tracking and Quality Inspection Report",
+  "job_id": "demo-image-inspection",
+  "filename": "real_fruits.jpg",
+  "generated_at": "2026-11-02T10:47:51.116947Z",
+  "academic_project_objectives": [
+    "Objective 1: Multi-fruit object detection using deep learning YOLO model",
+    "Objective 2: Multi-object tracking (ByteTrack) and unique object counting",
+    "Objective 3: Quality inspection and defect assessment with uncertainty handling"
+  ],
+  "video_metadata": {
+    "filename": "real_fruits.jpg",
+    "filesize_mb": 0.1,
+    "duration_seconds": 0.0,
+    "fps": 0.0,
+    "frame_count": 1,
+    "width": 800,
+    "height": 533,
+    "codec": "JPG"
+  },
+  "analysis_settings": {
+    "confidence_threshold": 0.25,
+    "tracking_enabled": false,
+    "quality_inspection_enabled": true,
+    "media_type": "image",
+    "detection_model": "yolov8n.pt",
+    "device": "cpu"
+  },
+  "summary_metrics": {
+    "total_frames_processed": 1,
+    "total_detections": 6,
+    "unique_fruits": 6,
+    "fruit_counts": {
+      "apple": 4,
+      "orange": 2
+    },
+    "fruit_percentages": {
+      "apple": 66.67,
+      "orange": 33.33
+    },
+    "quality_summary": {
+      "mode": "heuristic",
+      "model_identity": "FruitVision Heuristic Surface Analyzer v1.0 (Color/Defect Surface Heuristic - Not Deep Learning)",
+      "healthy_count": 4,
+      "defective_count": 2,
+      "uncertain_count": 0,
+      "defect_breakdown": {
+        "Visible Damage": 2,
+        "Rotten / Spoiled": 0
+      }
+    },
+    "avg_confidence": 0.3763,
+    "processing_time_seconds": 0.192,
+    "fps_throughput": 5.2
+  },
+  "tracked_objects": [
+    {
+      "track_id": 1,
+      "class_name": "apple",
+      "confidence": 0.5546,
+      "avg_confidence": 0.5546,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        566,
+        61,
+        741,
+        247
+      ],
+      "quality_label": "Visible Damage",
+      "quality_confidence": 0.832,
+      "is_uncertain": false
+    },
+    {
+      "track_id": 2,
+      "class_name": "apple",
+      "confidence": 0.4038,
+      "avg_confidence": 0.4038,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        596,
+        390,
+        764,
+        524
+      ],
+      "quality_label": "Visible Damage",
+      "quality_confidence": 0.845,
+      "is_uncertain": false
+    },
+    {
+      "track_id": 3,
+      "class_name": "apple",
+      "confidence": 0.3929,
+      "avg_confidence": 0.3929,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        351,
+        91,
+        637,
+        388
+      ],
+      "quality_label": "Healthy",
+      "quality_confidence": 0.734,
+      "is_uncertain": false
+    },
+    {
+      "track_id": 4,
+      "class_name": "apple",
+      "confidence": 0.3539,
+      "avg_confidence": 0.3539,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        0,
+        70,
+        278,
+        445
+      ],
+      "quality_label": "Healthy",
+      "quality_confidence": 0.819,
+      "is_uncertain": false
+    },
+    {
+      "track_id": 5,
+      "class_name": "orange",
+      "confidence": 0.2944,
+      "avg_confidence": 0.2944,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        353,
+        90,
+        637,
+        387
+      ],
+      "quality_label": "Healthy",
+      "quality_confidence": 0.739,
+      "is_uncertain": false
+    },
+    {
+      "track_id": 6,
+      "class_name": "orange",
+      "confidence": 0.2579,
+      "avg_confidence": 0.2579,
+      "detection_count": 1,
+      "first_frame": 1,
+      "last_frame": 1,
+      "bbox": [
+        712,
+        155,
+        799,
+        308
+      ],
+      "quality_label": "Healthy",
+      "quality_confidence": 0.734,
+      "is_uncertain": false
+    }
+  ],
+  "disclaimer": "Quality classifications are external visual defect assessments only. Heuristics or models do not verify internal flesh integrity or bacterial safety."
+}
